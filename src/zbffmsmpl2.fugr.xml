@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function group</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZBFFMSMPL2TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZBFFMSMPL2</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZSAMPLE_INTERFACE_00001060</FUNCNAME>
+     <SHORT_TEXT>NOTRANSL: Schnittstellenbeschreibung zu Event 00001060</SHORT_TEXT>
+    </item>
+   </FUNCTIONS>
+   <LONGTEXTS_ZSAMPLE_INTERFACE_00001060>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZSAMPLE_INTERFACE_00001060</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00020</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZSAMPLE_INTERFACE_00001060</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TEXT&amp; = &apos;BUCHEN BELEG:        Rechnungsprüfung&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;EVENT&amp; = &apos;00001060&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TYPE&amp; = &apos;INTERFACE&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE FI_OPEN_FI_DOCUMENTATION_1 OBJECT DOKU ID TX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>EVENT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Zeitpunkt liegt hinter dem Aufruf des Verbuchers fürs FI</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(POST_DOCUMENT) beim Erfassen einer Rechnung in der Rechnungsprüfung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Sie können an dieser Stelle die Verbuchung Ihrer eigenen zu den</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Belegpositionen konsistent zu verbuchenden Tabellen einleiten.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>INTERFACE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Es werden alle relevanten Daten zum aktuellen Beleg übergeben. Das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Kennzeichen I_XVBUP dient als reine Information, daß der SAP-Standard</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>asynchron verbucht.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>HU</TDFORMAT>
+       <TDLINE>Damit darf in der Zusatzkomponente keine schreibende Datenbankaktion</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ausgeführt werden !!</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Verbuchung (auch der Add-On-spezifischen Tabellen) wird durch den</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>COMMIT WORK des Standardablaufes ausgeführt. Falls Ihr</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Funktionsbaustein nicht über RFC gerufen wird, veranlassen Sie stets</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>asynchrone Verbuchung mit dem Zusatz</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>PE</TDFORMAT>
+       <TDLINE>IN UPDATE TASK.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZSAMPLE_INTERFACE_00001060</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0002</VERSION>
+      <TXTLINES>00022</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZSAMPLE_INTERFACE_00001060</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TEXT&amp; = &apos;DOCUMENT POSTING:        Invoice verification&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;EVENT&amp; = &apos;00001060&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>DEFINE &amp;TYPE&amp; = &apos;INTERFACE&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE FI_OPEN_FI_DOCUMENTATION_1 OBJECT DOKU ID TX LANGUAGE EN</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>EVENT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This Event is reached following callup of the update function module</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>for FI (POST_DOCUMENT) when entering an invoice during invoice</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verification. At this point you can introduce your own tables for which</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>an update posting is to be carried out at the same time as the tables.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>INTERFACE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>All the data relevant to the current document is transferred. The</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>indicator I_XVBUP serves solely to inform you that the SAP standard</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>system posts asynchronously.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The indicator I_XVBUP serves only to inform you that the SAP standard</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>system carries out an update posting asynchronously.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>HU</TDFORMAT>
+       <TDLINE>It follows that no database activities involving the writing of data</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>may be carried out in the additional component.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The update (including that of the tables specific to add-ons) is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>carried out by the COMMIT WORK of the standard process. If your</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>function module is not accessed via RFC, you should always initiate</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>asynchronous update using the ABAP statement</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>PE</TDFORMAT>
+       <TDLINE>IN UPDATE TASK.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZSAMPLE_INTERFACE_00001060>
+  </asx:values>
+ </asx:abap>
+</abapGit>
